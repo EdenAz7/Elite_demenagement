@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Elite Déménagement | Votre devis</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Elite Déménagement" />
+        <div>
+          <strong>Elite Déménagement</strong>
+          <span>Transport • Déménagement • Logistique</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation">
+        <a data-nav href="index.html">Votre devis</a>
+        <a data-nav href="services.html">Nos services</a>
+        <a data-nav href="apropos.html">À propos</a>
+      </nav>
+
+      <div class="nav-cta">
+        <div class="pill"><span class="dot"></span> 📞 <b>+3312345678</b></div>
+        <div class="pill">✉️ <b>edenaz31@gmail.com
+          </b></div>
+      </div>
+
+      <button class="burger" data-burger aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="drawer" data-drawer>
+    <div class="drawer-panel">
+      <div class="drawer-head">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <img src="assets/images/logo.png
+" alt="Logo" style="width:44px;height:44px;border-radius:12px;object-fit:cover;">
+          <strong>Menu</strong>
+        </div>
+        <button class="drawer-close" data-close aria-label="Fermer">✕</button>
+      </div>
+
+      <div class="drawer-links">
+        <a data-nav href="index.html">Votre devis</a>
+        <a data-nav href="services.html">Nos services</a>
+        <a data-nav href="apropos.html">À propos</a>
+      </div>
+
+      <div class="pill"><span class="dot"></span> 📞 <b>+3312345678</b></div>
+      <div style="height:10px"></div>
+      <div class="pill">✉️ <b>edenaz31@gmail.com
+        </b></div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="kicker"><span class="badge">GRATUIT</span> Réponse sous 24h</div>
+      <h1>Demandez votre devis personnalisé en 2 minutes !</h1>
+      <p>
+        Un déménagement sans stress, c’est possible ! Elite Déménagement vous accompagne dans chaque étape de votre
+        projet.
+        Que vous soyez particulier ou professionnel, nous vous proposons un devis gratuit, transparent et adapté à vos
+        besoins.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'})">
+          Demander mon devis
+        </button>
+        <a class="btn btn-secondary" style="text-decoration:none;display:inline-block" href="services.html">
+          Voir nos services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Pourquoi choisir Elite Déménagement ?</h2>
+      <p class="section-sub">
+        Nous combinons expertise terrain, logistique optimisée et service client réactif pour une expérience fluide et
+        sécurisée.
+      </p>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="icon">✓</div>
+          <h3>Devis personnalisé</h3>
+          <p>Nous analysons vos besoins pour vous proposer la solution la plus adaptée.</p>
+        </div>
+        <div class="card">
+          <div class="icon">★</div>
+          <h3>Service clé en main</h3>
+          <p>Emballage, transport, montage : on gère tout pour vous, sans stress.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⛟</div>
+          <h3>Expertise reconnue</h3>
+          <p>Fiabilité et rigueur d’une entreprise spécialisée dans le transport.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section" id="form-section">
+    <div class="container form-wrap">
+      <form id="form" class="form">
+
+        <h2 class="section-title" style="margin-bottom:6px">Obtenir votre devis</h2>
+
+        <p class="small-muted">
+          Remplissez le formulaire ci-dessous. Un conseiller vous contactera sous 24h.
+        </p>
+
+        <div class="row">
+
+          <div>
+            <label class="label">Nom</label>
+            <input class="input" name="Nom" required>
+          </div>
+
+          <div>
+            <label class="label">Prénom</label>
+            <input class="input" name="Prenom" required>
+          </div>
+
+        </div>
+
+        <label class="label">Département chargement</label>
+        <input class="input" name="Département chargement" required>
+
+        <label class="label">Département livraison</label>
+        <input class="input" name="Département livraison" required>
+
+        <div class="row">
+
+          <div>
+            <label class="label">Seriez-vous intéressé par des packs de cartons et d’emballage ?</label>
+            <select class="select" name="Carton" required>
+              <option value="" disabled selected>---</option>
+              <option value="Oui">Oui</option>
+              <option value="Non">Non</option>
+            </select>
+          </div>
+          <div>
+            <label class="label">Type de Résidence</label>
+            <select class="select" name="Type de Résidence" required>
+              <option value="" disabled selected>---</option>
+              <option value="Maison">Maison</option>
+              <option value="Appartement">Appartement</option>
+              <option value="Bureau">Bureau</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="label">Volume</label>
+            <input class="input" name="Volume">
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div>
+            <label class="label">Date souhaitée</label>
+            <input id="date" class="input" type="date" name="date">
+          </div>
+
+          <div>
+            <label class="label">Téléphone</label>
+            <input class="input" name="Telephone" required>
+          </div>
+
+        </div>
+
+        <label class="label">Email</label>
+        <input class="input" type="email" name="Email" required>
+
+        <label class="label">Message</label>
+        <textarea class="textarea" name="Notes"></textarea>
+
+        <div style="margin-top:14px">
+
+          <button id="submit-button" type="submit" class="btn btn-primary">
+            Envoyer
+          </button>
+          <div id="message" style="display:none;margin-top:10px;"></div>
+
+
+
+        </div>
+
+      </form>
+
+
+      <aside class="helper">
+        <h3 style="margin:0 0 6px">Comment ça se passe ?</h3>
+        <p class="small-muted" style="margin-top:0">
+          Simple, rapide, efficace — vous gardez le contrôle.
+        </p>
+        <ul>
+          <li>Vous remplissez le formulaire (2 minutes).</li>
+          <li>Un conseiller vous appelle sous 24h.</li>
+          <li>Vous recevez une estimation claire et détaillée.</li>
+          <li>Si vous validez, on planifie et on s’occupe de tout.</li>
+        </ul>
+
+        <div style="margin-top:14px" class="pill">
+          <span class="dot"></span> Assistance: <b>+3312345678</b>
+        </div>
+
+        <p class="small-muted" style="margin-top:14px">
+          Mentions légales : Elite Déménagement - Est une marque du groupe cnkdem • Siège social : 8 Rue de la République, 13001 Marseille, France • Email
+          : contact@elitedemenagement.com •
+          SIRET : 993 560 879 00013 – TVA : FR10 993 560 879 • Code NAF/APE : 49.42Z
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Elite Déménagement</strong> — © 2026. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
