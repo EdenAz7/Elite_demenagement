@@ -231,7 +231,7 @@ body{
 }
 .kicker .badge{
   background: var(--yellow);
-  color: #0b1220;
+  color: #f0f0f0;
   font-weight: 1000;
   padding:4px 10px;
   border-radius:999px;
