@@ -241,6 +241,7 @@ body{
   font-size: clamp(32px, 4vw, 54px);
   letter-spacing:-0.03em;
   line-height:1.04;
+    color: rgba(223, 223, 223, 0.88);
 }
 .hero p{
   margin:0 0 22px;
