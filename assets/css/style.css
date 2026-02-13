@@ -202,6 +202,8 @@ body{
                          rgba(11,18,32,.15) 100%),
     url("/assets/images/truck-hero.jpg") center/cover no-repeat;
   transform: scale(1.03);
+
+  pointer-events:none; /* 👈 להוסיף את השורה הזאת */
 }
 .hero::after{
   content:"";
@@ -213,8 +215,7 @@ body{
 }
 .hero-content{
   position:relative;
-  padding: 64px 0;
-  color:#fff;
+  z-index:2; /* 👈 להוסיף */
 }
 .kicker{
   display:inline-flex;
@@ -294,11 +295,37 @@ body{
   font-size: 16px;
   letter-spacing:-0.01em;
 }
+.drawer-links{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin:20px 0;
+}
+
+.drawer-links a{
+  text-decoration:none;
+  color: var(--blue);
+  font-weight:700;
+  font-size:16px;
+  padding:12px 14px;
+  border-radius:12px;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.drawer-links a:hover{
+  background: rgba(35,58,94,.08);
+  transform: translateX(4px);
+}
+
 .card p{
   margin:0;
   color: var(--muted);
   line-height:1.55;
   font-size: 14px;
+}
+.pill{
+  text-decoration:none;
+  color:inherit;
 }
 .icon{
   width:44px;height:44px;
@@ -309,14 +336,7 @@ body{
   border: 1px solid var(--border);
   position:relative;
 }
-.icon::after{
-  content:"";
-  position:absolute;
-  width:10px;height:10px;
-  border-radius:999px;
-  background: var(--yellow);
-  right:-3px; top:-3px;
-}
+
 
 /* ====== Form ====== */
 .form-wrap{
